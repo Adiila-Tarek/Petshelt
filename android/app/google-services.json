@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "398727498716",
+    "project_id": "petshelt-6339d",
+    "storage_bucket": "petshelt-6339d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398727498716:android:d31fbbb3d68423f3fb5d19",
+        "android_client_info": {
+          "package_name": "com.example.petshelt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398727498716-i5o8i09isrql3dce7bp88skug42lh14t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhfH-XYOmh_kBDm8oQm_IcGlDhom6Jr88"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398727498716-i5o8i09isrql3dce7bp88skug42lh14t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
