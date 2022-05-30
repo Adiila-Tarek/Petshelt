@@ -32,6 +32,7 @@ class _DetectBreedState extends State<DetectBreed> {
             await MultipartFile.fromFile(filePath.path, filename: fileName),
       });
 
+
       Dio dio = new Dio();
       dio.options.contentType = 'multipart/form-data';
       Response response = await dio.post(
@@ -56,14 +57,12 @@ class _DetectBreedState extends State<DetectBreed> {
       _image = image.path;
       _uploadFile(file);
       Map<String, dynamic> result = await _uploadFile(file);
-      if (result != null) {
-        print(result["breed"]);
-        result2 = result["breed"];
+      print(result["breed"]);
+      result2 = result["breed"];
 
-        setState(() {
-          result2 = result["breed"];
-        });
-      }
+      setState(() {
+        result2 = result["breed"];
+      });
     } else {
       showSnackBar("No File selected", Duration(milliseconds: 400));
     }
@@ -75,14 +74,12 @@ class _DetectBreedState extends State<DetectBreed> {
       file = File(image.path);
       _image = image.path;
       Map<String, dynamic> result = await _uploadFile(file);
-      if (result != null) {
-        print(result["breed"]);
-        result2 = result["breed"];
+      print(result["breed"]);
+      result2 = result["breed"];
 
-        setState(() {
-          result2 = result["breed"];
-        });
-      }
+      setState(() {
+        result2 = result["breed"];
+      });
     } else {
       showSnackBar("No File selected", Duration(milliseconds: 400));
     }
@@ -99,31 +96,11 @@ class _DetectBreedState extends State<DetectBreed> {
           children: [
             Expanded(
                 child: Container(
-              child: _image == null
-                  ? Text('data')
-                  : Image.file(
+              child: _image == null ? Image.asset('assets/images/know.png',) : Image.file(
                       File(_image),
                       fit: BoxFit.cover,
                     ),
             )
-
-/*
-              Padding(
-                padding: const EdgeInsets.all(40.0),
-                child:
-                Image.file(File(_image),fit: BoxFit.cover,),
-
-                //
-*/
-/*
-                Image.asset(
-                  'images/shop.png',
-                )
-*/ /*
-
-                //Text('')   :
-              ),
-*/
                 ),
             Expanded(
               child: Container(
